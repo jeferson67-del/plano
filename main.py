@@ -1,7 +1,7 @@
 import os
 import streamlit as st
 from dotenv import load_dotenv
-from langchain_groq import ChatGroq
+from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.output_parsers import StrOutputParser
 from fpdf import FPDF
 
@@ -298,9 +298,10 @@ Banco_de_exemplos = {
 
 # 4. FUNÇÕES DE GERAÇÃO (2 MODOS PARA O EXPERIMENTO COMPARATIVO)
 def LLM_Setup(prompt_text):
-    model = ChatGroq(
-        model="llama-3.3-70b-versatile",
-        temperature=0
+    model = ChatGoogleGenerativeAI(
+        model="gemini-1.5-flash",
+        google_api_key=os.getenv('GOOGLE_API_KEY'),
+        temperature=0.0
     )
     parser = StrOutputParser()
     chain = model | parser
