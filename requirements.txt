@@ -1,6 +1,7 @@
 ﻿langchain>=0.2.0
 langchain-core
 langchain-google-genai
+google-generativeai
 streamlit
 python-dotenv
 fpdf2
