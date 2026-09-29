@@ -303,7 +303,7 @@ def LLM_Setup(prompt_text):
     os.environ["GEMINI_API_KEY"] = chave
     
     model = ChatGoogleGenerativeAI(
-        model="gemini-1.5-flash-latest",
+        model="gemini-pro",
         google_api_key=chave,
         temperature=0.0
     )
