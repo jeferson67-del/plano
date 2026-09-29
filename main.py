@@ -298,9 +298,13 @@ Banco_de_exemplos = {
 
 # 4. FUNÇÕES DE GERAÇÃO (2 MODOS PARA O EXPERIMENTO COMPARATIVO)
 def LLM_Setup(prompt_text):
+    chave = os.getenv("GOOGLE_API_KEY")
+    os.environ["GOOGLE_API_KEY"] = chave
+    os.environ["GEMINI_API_KEY"] = chave
+
     model = ChatGoogleGenerativeAI(
         model="gemini-1.5-flash",
-        google_api_key=os.getenv('GOOGLE_API_KEY'),
+        google_api_key=chave,
         temperature=0.0
     )
     parser = StrOutputParser()
