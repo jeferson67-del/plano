@@ -1,11 +1,11 @@
 Cenários pedagógicos
 
 Cenário - TDAH
-Disciplina: Matemática
-Tópico: Frações
+Disciplina: Geografia
+Tópico: Paisagem natural e modificada
 Série: 6º ano do Ensino Fundamental
-Habilidade BNCC: EF06MA07
-Objetivos: Compreender o conceito de fração como parte de um todo
+Habilidade BNCC: EF06GE01
+Objetivos: Diferenciar paisagem natural de paisagem modificada, identificando as ações humanas no espaço geográfico
 Duração: 50 minutos
 
 Cenário - TEA (cenário avaliado neste estudo)
